@@ -1,0 +1,78 @@
+/******************* TAG SELECTOR ********************/
+body{
+  margin: 0;
+  text-align: center;
+  /** font family:
+      Serif has tails like Times New Roman
+      Sans-Serif has no tails and contemporary like Arial
+      Monospace font has equal spaces like in text editor
+      Fantasy font is like in Avatar
+      use www.cssfontstack.com to check the right render of font as fall back **/
+  /**
+    FONT: https://font.google.com
+    Embed the font by copying the link you like
+  **/
+  font-family: verdana, sans-serif;
+  font-family: 'Merriweather', serif;
+}
+h1{
+  width:10%;
+  /* top, right, bottom, left works like clockwise */
+  margin: 0 auto 0 auto;
+  font-family: 'Sacramento', cursive;
+}
+h2{
+  font-family: 'Montserrat', sans-serif;
+}
+h3{
+  font-family: 'Montserrat', sans-serif;
+}
+div {
+  background-color: #E4F9F5;
+}
+
+/******************* CLASS SELECTOR ********************/
+.top-container
+{
+  /* padding pushes down the image */
+  padding-top: 100px;
+  background-color: #E4F9F5;
+ /* change the position into relative to use it as reference of the cloud */
+ position: relative;
+}
+
+.middle-container
+{
+  background-color: red;
+  width: 200px;
+  height: 200px;
+}
+
+.bottom-container
+{
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+}
+
+.Web {
+  text-decoration: underline;
+}
+
+.top-cloud{
+  /* change the position into absolute to move the image freely */
+  position: absolute;
+  /* right margin */
+  right: 300px;
+  /* top margin */
+  top: 50px;
+}
+
+.bottom-cloud{
+  /* change the position into absolute to move the image freely */
+  position: absolute;
+  /* left margin */
+  left: 300px;
+  /* bottom margin from its parent top-container */
+  bottom: 300px;  /* change the position into absolute to move the image freely */
+}

@@ -1,0 +1,210 @@
+/* HTML Element Selectors  */
+body {
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+h3{
+  font-family: "Montserrat";
+  font-weight: lighter;
+  font-size: 1.5rem;
+}
+
+
+p{
+  font-family: "Montserrat";
+  font-weight: 300;
+}
+
+/* Headings */
+.big-heading{
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Containers */
+.container-fluid{
+  /* padding is space between the element and text */
+  padding: 7% 15%;
+}
+
+/* Sections */
+.colored-section{
+  background-color: #ff4C68;
+  color: #fff;
+}
+.white-section{
+  background-color: #fff;
+}
+
+/* Title Section */
+#title{
+  text-align: left;
+}
+/* #title .container = having space looks for class container inside the id of title */
+/* container.title = a class must have both container and tiltle classes eg. class= "container title"
+eg. h1.container-fluid h1#title*/
+#title .container-fluid{
+  /* padding is space between the element and text */
+  padding: 3% 15% 7%;
+}
+
+/* Navigation Bar */
+.navbar {
+  padding: 0 0 4.5rem;
+}
+.navbar-brand{
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item{
+  padding: 0 18px;
+}
+
+.nav-link{
+  font-size: 1.2rem;
+}
+
+/* Download Buttons */
+.download-button {
+  margin: 5% 3% 5% 0;
+  font-weight: normal;
+}
+
+
+/* Title Image */
+.title-image {
+  width: 60%;
+  /* rotate */
+  transform: rotate(25deg);
+  padding: 1.2rem;
+  /* position for z index for stacking order*/
+  position: absolute;
+  right: 30%;
+}
+
+/* Features Section  */
+#features{
+  position: relative;
+  z-index: 1;
+}
+
+.features-desc{
+  padding: 5% 3%;
+  font-weight: 900;
+}
+
+.features-icon{
+  color: #ff6666;
+  margin: 10% 25%;
+}
+
+.features-icon:hover{
+  color: #ef8172;
+}
+
+.feature-title{
+  font-size: 1.5rem;
+}
+
+/* Testimonial Section */
+
+#testimonials{
+  background-color: #ef8172;
+}
+
+.testimonial-text{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image{
+  width: 10%;
+  border-radius: 100%; /* make it circle */
+  margin: 20px;
+}
+
+.carousel-item{
+  padding: 7% 15%;
+}
+
+/* Press Section */
+#press{
+  padding-bottom: 3%;
+  background-color: #ef8172;
+}
+
+.press-logo{
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* Pricing Section  */
+#pricing{
+  padding: 100px;
+}
+
+.price-text{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-col{
+  padding: 3% 2%;
+}
+
+.card-title{
+  font-size: 1.5rem;
+}
+
+#cta {
+  font: "Montserrat";
+  font-weight: 900;
+  font-size: 1.5rem;
+  padding: 3% 5%;
+}
+
+.cta-button{
+  margin: 3% 1% 3% 0;
+  font-weight: normal;
+}
+
+#footer{
+  padding: 3% 5%;
+}
+
+.footer-icon{
+  padding: 0 0.5% 1%;
+}
+
+.footer-paragraph{
+  font-family: "Montserrat";
+  font-weight: 900;
+  color:#A9A9A9;
+}
+
+/* media query, controls viewport  */
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+  .title-image{
+    position: static;
+    transform: rotate(0);
+  }
+}

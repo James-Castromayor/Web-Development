@@ -1,0 +1,173 @@
+/******************* TAG SELECTOR ********************/
+body {
+  margin: 0;
+  text-align: center;
+  /** font family:
+      Serif has tails like Times New Roman
+      Sans-Serif has no tails and contemporary like Arial
+      Monospace font has equal spaces like in text editor
+      Fantasy font is like in Avatar
+      use www.cssfontstack.com to check the right render of font as fall back **/
+  /**
+    FONT: https://font.google.com
+    Embed the font by copying the link you like
+  **/
+  font-family: 'Merriweather', serif;
+  font-size: 200%;
+}
+
+h1 {
+  /* top, right, bottom, left works like clockwise */
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  color: #66BFBF;
+  /* Font size using px is static,
+    To make it dynamic, use the percentage size
+    100% is equivalent to 16px */
+  /* equivalent into 90px
+   font-size: 562.5%;*/
+  /* Font size using em is also dynamic, it is a phonetic term for 'em'. 1 em is equal to the width of capital M or 16px or 100% */
+  /*font-size: 5.625em;*/
+  font-size: 5.625rem;
+  /* rem ( root em ) ignores the inherited  size */
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #66BFBF;
+  margin: 2rem auto 0 auto;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+}
+
+hr{
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+
+p{
+  line-height: 2;
+}
+
+a{
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #66BFBF;
+}
+/******************* CLASS SELECTOR ********************/
+.top-container {
+  /* padding pushes down the image */
+  padding-top: 100px;
+  background-color: #E4F9F5;
+  /* change the position into relative to use it as reference of the cloud */
+  position: relative;
+}
+.bottom-container {
+  background-color: #E4F9F5;
+  padding: 50px 0 20px;
+}
+
+.Web {
+  text-decoration: underline;
+}
+
+.top-cloud {
+  /* change the position into absolute to move the image freely */
+  position: absolute;
+  /* right margin */
+  right: 300px;
+  /* top margin */
+  top: 50px;
+}
+
+.bottom-cloud {
+  /* change the position into absolute to move the image freely */
+  position: absolute;
+  /* left margin */
+  left: 300px;
+  /* bottom margin from its parent top-container */
+  bottom: 300px;
+  /* change the position into absolute to move the image freely */
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  margin: 10px auto;
+}
+.skills-image {
+  width: 200px;
+  height: 200px;
+  /* float property lets the text to float beside the image, use float to wrapped image only*/
+  float: left;
+  margin-right: 10%;
+}
+.bacon-image {
+  width: 200px;
+  height: 200px;
+  /* float property lets the text to float beside the image */
+  float: right;
+  margin-left: 10px;
+}
+
+.skill-row{
+  text-align: left;
+  margin: 10% auto 10% auto;
+}
+
+/*.skills-description{
+ clear function do not allow any element to exist on the left side
+clear: left;
+}*/
+
+.contact-message{
+  width: 40%;
+  margin: 40px auto 60px;
+}
+
+/* css3buttongenerator.com to generate button */
+.btn {
+  background: #11Cdd4;
+  background-image: -webkit-linear-gradient(top, #11Cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11Cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11Cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11Cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11Cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+.contact-me{
+  margin: 100px auto 100px auto;
+}
+
+.copyright{
+  color: #66BFBF;
+}
